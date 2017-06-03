@@ -1,0 +1,102 @@
+* {
+  background-color: #EDF2F6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15%;
+  height: 100vh;
+  background-color: #354052;
+}
+
+.sidebar-image {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 2px -2px #2E2E33;
+  margin-bottom: 10px;
+}
+
+.erlich-photo {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 10px auto;
+}
+
+.sidebar-image h3 {
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+h3 img {
+  height: 12px;
+  padding-left: 5px;
+}
+
+nav {
+  margin-top: 10px;
+  box-shadow: 0 4px 2px -2px #2E2E33;
+}
+
+.checkboxes,
+nav,
+h3,
+h5,
+li,
+.sidebar-image,
+.sidebar-image img,
+li img {
+  color: #EDF2F6;
+  background: inherit;
+}
+
+nav,
+.checkboxes {
+  display: block;
+  width: 85%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  padding: 5px 10px 5px 0;
+}
+
+li img {
+  height: 16px;
+  padding-right: 10px;
+}
+
+
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85%;
+  height: 50px;
+  background-color: #FFF;
+}
+
+.title-container {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  height: 150px;
+  width: 85%;
+  background-color: purple;
+}
+
+.main-content {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  width: 85%;
+  border: 2px solid black;
+  background-color: #354052;
+}
