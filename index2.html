@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comp Challenge 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <sidebar class="sidebar">
+      <header class="sidebar-top links">
+        <img class="profile-picture" src="assets/erlich.png" alt="Headshot of Erlich Bachman">
+        <p class="profile-title">Erlich Bachman</p>
+        <div class="arrow drop-down-arrow"></div>
+      </header>
+      <div class="sidebar-main links">
+        <h3 class="sidebar-title">Main</h3>
+        <a href='#' class="sidebar-link home">HOME</a>
+        <a href="#" class="sidebar-link jobs" >JOBS</a>
+        <a href="#" class="sidebar-link resumes">RESUMES</a>
+        <a href="#" class="sidebar-link tasks">TASKS</a>
+        <a href="#" class="sidebar-link calendar">CALENDAR</a>
+      </div>
+      <div class="sidebar-admin links">
+        <h3 class="sidebar-title">Admin</h3>
+        <a href="#" class="sidebar-link users">USERS</a>
+        <a href="#" class="sidebar-link locations">LOCATIONS</a>
+        <a href="#" class="sidebar-link workflows">WORKFLOWS</a>
+        <a href="#" class="sidebar-link job-boards">JOB BOARDS</a>
+        <a href="#" class="sidebar-link social">SOCIAL</a>
+      </div>
+      <div class="sidebar-categories links">
+        <h3 class="sidebar-title">Categories</h3>
+        <label class="checkbox-label">
+          <input class="sidebar-checkbox" type="checkbox" id="administrative">
+          Administrative
+        </label>
+        <label class="checkbox-label">
+          <input class="sidebar-checkbox" type="checkbox" id="design">
+          Design
+        </label>
+
+        <label class="checkbox-label">
+          <input class="sidebar-checkbox" type="checkbox" id="executive">
+          Executive
+        </label>
+
+        <label class="checkbox-label">
+          <input class="sidebar-checkbox" type="checkbox" id="human-resources">
+          Human Resources
+        </label>
+      </div>
+    </sidebar>
+    <main>
+      <nav class="top">
+        <input class="top-item hamburger-icon" type="button">
+        <input class="top-item search" type="search" placeholder="Search for a job, task, or resume">
+        <input class="top-item new-profile-icon" type="button">
+        <input class="top-item calendar-icon" type="button">
+        <input class="top-item grid-icon" type="button">
+      </nav>
+      <header class="title-header">
+        <div class="title-box">
+          <h1 class="job-title">Customer Service Representative</h1>
+          <p class="job-location">Silicon Valley, CA</p>
+          <p class="title-separator">-</p>
+          <a class="preview" href="#">Preview this post</a>
+        </div>
+        <div class="header-btn-container">
+          <button class="title-btn open-btn" type="button" name="open" role="status of requisition">
+            <div class="status-circle"></div>
+            OPEN
+          </button>
+          <button class="title-btn flag-btn" type="button" name="flag" role="flag this content"></button>
+          <button class="title-btn edit-btn" type="button" name="edit" role="edit content"></button>
+          <button class="title-btn delete-btn" type="button" name="delete" role="delete this page"></button>
+        </div>
+      </header>
+      <section class="tab-bar">
+        <a class="tab-link summary-tab" href="">SUMMARY</a>
+        <a class="tab-link applicants-tab" href="">APPLICANTS</a>
+        <a class="tab-link more-2" href="">MORE ...</a>
+        <a class="tab-link job-tab" href="">JOB BOARD</a>
+        <a class="tab-link more-1" href="">MORE ...</a>
+        <a class="tab-link interviews-tab" href="">INTERVIEWS</a>
+        <a class="tab-link activity-tab" href="">ACTIVITY</a>
+        <a class="tab-link broadcast-tab" href="">BROADCAST</a>
+        <a class="tab-link notifications-tab" href="">NOTIFICATIONS</a>
+      </section>
+      <section class="chart-area">
+        <div class="chart-container">
+          <div class="progress-charts">
+            <div class="circle-chart applicants">
+              <div class="donut-box">
+                <h2 class="chart-number">6,969</h2>
+                <p class="chart-text">APPLICANTS</p>
+              </div>
+            </div>
+            <div class="circle-chart interviews">
+              <div class="donut-box">
+                <h2 class="chart-number">6,969</h2>
+                <p class="chart-text">INTERVIEWS</p>
+              </div>
+            </div>
+            <div class="circle-chart forwards">
+              <div class="donut-box">
+                <h2 class="chart-number">6,969</h2>
+                <p class="chart-text">FORWARDS</p>
+              </div>
+            </div>
+          </div>
+          <button class="chart-btn" type="button" role="click for more detail on total statistics">TOTALS - OUT OF 69k VIEWS</button>
+        </div>
+        <div class="graph">
+          <img class="graph-image" src="assets/photos/bar-chart.png" alt="graph showing applicants per day">
+          <button class="chart-btn" type="button" role="click for more statistics on applicants per day">APPLICANTS/DAY</button>
+        </div>
+      </section>
+      <div class="separator">
+        <hr>
+        <div class="arrow up-arrow"></div>
+        <hr>
+      </div>
+      <section class="table-contact">
+        <table>
+          <thead>
+            <tr>
+              <th class="table-header">JOB DESCRIPTION</th>
+              <th><button class="table-btn edit" type="button" name="edit">EDIT</button></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-title">POSITION TITLE</td>
+              <td class="table-description">CEO of Aviato</td>
+            </tr>
+            <tr>
+              <td class="table-title">LOCATION</td>
+              <td class="table-description">Silicon Valley, CA</td>
+            </tr>
+            <tr>
+              <td class="table-title">EMPLOYMENT TYPE</td>
+              <td class="table-description">I'm the Boss</td>
+            </tr>
+            <tr>
+              <td class="table-title">EXPERIENCE</td>
+              <td class="table-description">Who are you to ask that of me?</td>
+            </tr>
+            <tr>
+              <td class="table-title">STATUS</td>
+              <td class="table-description">Winning</td>
+            </tr>
+            <tr>
+              <td class="table-title">DESCRIPTION</td>
+              <td class="table-description">
+                The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer wait times while doing a backhand spring and eating a ham sandwich.
+              </td>
+            </tr>
+            <tr>
+              <td class="table-title">HIRING LEAD</td>
+              <td class="table-description photo-box">
+                <img class="hire-photo" src="assets/erlich.png" alt="Headshot of Erlich Bachman">
+                <p>Mid-level</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-title">APPROVED SALARY</td>
+              <td class="table-description salary">$58,000</td>
+            </tr>
+          </tbody>
+        </table>
+        <section class="contact-box">
+          <article class="social-container">
+            <button class="social-media facebook"type="button">Post to Facebook</button>
+            <button class="social-media twitter"type="button">Tweet this Job</button>
+            <button class="social-media linkedin"type="button">Post to LinkedIn</button>
+          </article>
+          <article class="share">
+            <div class="job-link-container">
+              <h2 class="share-title link-to-job">Link to this Job</h2>
+              <p class="share-text">“I run a thriving incubator! … It is thriving. … Isn’t it? … Fuck you guys!”.</p>
+              <div class="copy-box">
+                <input class="copy-text" type="text" readonly value="“I run a thriving incubator! … It is thriving. … Isn’t it? … Fuck you guys!”. ">
+                <button class="save-text-btn" type="button">Copy</button>
+              </div>
+            </div>
+            <div class="job-link-container">
+              <h2 class="share-title widget">Use the Button Widget</h2>
+              <p class="share-text">“I run a thriving incubator! … It is thriving. … Isn’t it? … Fuck you guys!”. </p>
+              <div class="copy-box">
+                <input class="copy-text" type="text" readonly value="“I run a thriving incubator! … It is thriving. … Isn’t it? … Fuck you guys!”. ">
+                <button class="save-text-btn" type="button">Copy</button>
+              </div>
+            </div>
+            <div class="job-link-container">
+              <h2 class="share-title upload">Upload Resumes by Email</h2>
+              <p class="share-text">“I run a thriving incubator! … It is thriving. … Isn’t it? … Fuck you guys!”. </p>
+              <input class="copy-text" type="text" readonly value="“I run a thriving incubator! … It is thriving. … Isn’t it? … Fuck you guys!”. ">
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

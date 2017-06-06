@@ -1,18 +1,48 @@
-* {
-  background-color: #EDF2F6;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+/************************************
+*********** Global Styles ***********
+*************************************/
 
+* {
+  box-sizing: : border-box;
+  background-color: #EDF2F6;
+  font-family: 'Roboto', sans-serif;
 }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/************************************
+*********** Sidebar Styles **********
+*************************************/
 
 .sidebar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 15%;
-  height: 100vh;
+  width: 200px;
+  min-width: 200px;
+  min-height: 100%;
   background-color: #354052;
+  transition: .25s;
 }
+
+.sidebar h5,
+.sidebar li {
+  color: #868994;
+}
+
 
 .sidebar-image {
   width: 100%;
@@ -28,12 +58,12 @@
   margin: 10px auto;
 }
 
-.sidebar-image h3 {
+.sidebar-image h5 {
   text-align: center;
   padding-bottom: 10%;
 }
 
-h3 img {
+h5 img {
   height: 12px;
   padding-left: 5px;
 }
@@ -58,20 +88,40 @@ li img {
 nav,
 .checkboxes {
   display: block;
-  width: 85%;
+  width: 100%;
   margin: auto;
 }
 
+.sidebar-titles{
+  padding: 15px 0 10px 15px;
+}
+
 li {
+  font-size: 14px;
   list-style: none;
   padding: 5px 10px 5px 0;
 }
 
 li img {
-  height: 16px;
+  height: 14px;
   padding-right: 10px;
+  padding-left: 15px;
 }
 
+li input {
+  padding-right: 5px;
+}
+
+.calendar,
+.social {
+  padding-bottom: 20px;
+}
+
+
+
+/************************************
+*********** Header Styles **********
+*************************************/
 
 
 header {
@@ -81,6 +131,34 @@ header {
   width: 85%;
   height: 50px;
   background-color: #FFF;
+  border-bottom: 2px solid grey;
+}
+
+.hamburger,
+.top-right {
+  display: inline-block;
+  width: 50px;
+  height: 100%;
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+}
+
+.add-menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.add-calendar {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.add-person {
+  position: absolute;
+  top: 0;
+  right: 100px
 }
 
 .title-container {
