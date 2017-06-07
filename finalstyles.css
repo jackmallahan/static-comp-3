@@ -252,7 +252,7 @@ main {
   background-image: url("assets/add-user.svg");
 }
 .calendar-icon:hover {
-  background-image: url("assets/icons/header-calendar.svg");
+  background-image: url("assets/header-calendar.svg");
 }
 .grid-icon:hover {
   background-image: url("assets/grid-menu.svg");
