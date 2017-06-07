@@ -424,7 +424,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  transform: rotate(45deg);
+  transform: rotate(-135deg);
   text-align: center;
   height: 150px;
   width: 150px;
@@ -434,7 +434,7 @@ main {
 }
 
 .pie-hole {
-  transform: rotate(-45deg);
+  transform: rotate(135deg);
 }
 
 .applicants {
