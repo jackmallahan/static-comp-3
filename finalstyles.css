@@ -73,6 +73,7 @@ main,
 .profile-title {
   color: #B9BDCC;
   display: inline-block;
+  margin-left: 45px;
 }
 
 .sidebar-profile.links {
