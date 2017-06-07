@@ -41,7 +41,7 @@ h3 {
 
 p, a, input, label, td, button {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
 }
 
 a{
@@ -58,14 +58,14 @@ main,
   min-height: 100%;
 }
 
-/*======================
-========Side Bar=======
-=======================*/
+/**********************
+********Side Bar*******
+***********************/
 
 .sidebar {
   width: 200px;
   min-width: 200px;
-  background-color: #283041;
+  background-color: #283040;
   color: #B9BDCC;
   transition: 200ms;
 }
@@ -131,17 +131,6 @@ main,
   color: #fff;
 }
 
-.home:hover {background-image: url("assets/013-home-interface.svg")}
-.jobs:hover {background-image: url("assets/012-vintage.svg")}
-.resumes:hover {background-image: url("assets/011-resume.svg")}
-.tasks:hover {background-image: url("assets/010-clipboard.svg")}
-.calendar {background-image: url("assets/009-calendar.svg")}
-.users {background-image: url("assets/008-users.svg")}
-.locations {background-image: url("assets/007-locations.svg")}
-.workflows {background-image: url("assets/006-workflow.svg")}
-.job-boards {background-image: url("assets/005-newspaper.svg")}
-.social {background-image: url("assets/004-share.svg")}
-
 .cb-title {
   padding: 10px;
   display: block;
@@ -180,13 +169,13 @@ input[type="checkbox"]:checked:before {
 
 
 
-/*======================
-========Main Box========
-=======================*/
+/**********************
+**********Main*********
+***********************/
 
 main {
   width: 100%;
-  background-color: #E8EFF4;
+  background-color: #EDF2F6;
 }
 
 .top,
@@ -269,9 +258,9 @@ main {
 }
 
 
-/*======================
-=========Header=========
-=======================*/
+/**********************
+*********Header********
+***********************/
 
 .title-header {
   padding: 30px;
@@ -287,7 +276,7 @@ main {
 
 .headquarters {
   padding-left: 15px;
-  background-image: url("assets/007-locations.svg");
+  background-image: url("assets/location-grey.svg");
   background-size: 12px;
   background-repeat: no-repeat;
   background-position-y: 50%;
@@ -322,9 +311,9 @@ main {
   background-position-y: 50%;
 }
 
-.flag-btn{background-image: url("assets/icons/banner.svg")}
-.edit-btn{background-image: url("assets/icons/edit.svg")}
-.delete-btn{background-image: url("assets/icons/trash.svg")}
+.bookmark-btn{background-image: url("assets/bookmark-grey.svg")}
+.edit-btn{background-image: url("assets/pencil-grey.svg")}
+.delete-btn{background-image: url("assets/garbage-grey.svg")}
 
 .open-btn {
   margin-left: 0;
@@ -341,9 +330,9 @@ main {
   cursor: pointer;
 }
 
-.flag-btn:hover{background-image: url("assets/icons/banner-2.svg")}
-.edit-btn:hover{background-image: url("assets/icons/edit-2.svg")}
-.delete-btn:hover{background-image: url("assets/icons/trash-2.svg")}
+.bookmark-btn:hover{background-image: url("assets/bookmark-white.svg")}
+.edit-btn:hover{background-image: url("assets/pencil-white.svg")}
+.delete-btn:hover{background-image: url("assets/garbage-white.svg")}
 
 .status-circle {
   display: inline-block;
@@ -353,16 +342,16 @@ main {
   width: 10px;
 }
 
-/*======================
-========Tab Bar=========
-=======================*/
+/**********************
+*********Tab Bar*******
+***********************/
 
 .tab-bar {
   padding: 0 30px;
   border-bottom: 1px solid #B9BDCC;
 }
 
-.tab-link {
+.tab {
   display: inline-block;
   padding: 15px 0;
   margin-right: 30px;
@@ -370,17 +359,16 @@ main {
   color: #B9BDCC;
 }
 
-.more-1,
-.more-2 {
+.more-1 {
   display: none;
   margin-right: 0;
 }
 
-.tab-link:visited {
+.tab:visited {
   color: #B9BDCC;
 }
 
-.tab-link:hover {
+.tab:hover {
   border-bottom: solid #2096F6 3px;
   color: #000;
 }
@@ -389,9 +377,9 @@ main {
   margin-right: 0;
 }
 
-/****************************
-**********Top Main***********
-****************************/
+/**********************
+********Top Main*******
+***********************/
 
 .top-main,
 .separator,
@@ -402,9 +390,10 @@ main {
 
 
 .top-main {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
 }
 
 .progress-charts {
@@ -481,16 +470,11 @@ main {
   height: 165px;
 }
 
-
-
-/*======================
-========Separator=======
-=======================*/
 .separator {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  background-color: #E8EFF4;
+  background-color: #EDF2F6;
   padding: 10px 30px;
 }
 
@@ -510,15 +494,16 @@ hr:last-child {
 }
 
 
-/*======================
-==========Table=========
-=======================*/
+/**********************
+******Stupid Table*****
+***********************/
+
 .table-contact {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
   padding: 30px;
-  background-color: #E8EFF4;
+  background-color: #EDF2F6;
 }
 
 table {
@@ -547,7 +532,7 @@ th {
   padding-left: 25px;
   border: none;
   background-color: #868994;
-  background-image: url("assets/icons/edit-2.svg");
+  background-image: url("assets/pencil-white.svg");
   background-size: 15px;
   background-position-y: 50%;
   background-position-x: 5px;
@@ -596,11 +581,11 @@ tr:last-child {
   margin-right: 10px;
 }
 
-/*======================
-=========Contact========
-=======================*/
+/**********************
+*******Social Box******
+***********************/
 
-.contact-box {
+.social-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -641,7 +626,6 @@ tr:last-child {
 .linkedin:hover {background-color: #03395d;}
 
 
-
 .job-link-container {
   padding: 15px 0 25px;
   border-bottom: 1px solid #D2D8E0;
@@ -662,9 +646,9 @@ tr:last-child {
   background-position-y: 50%;
 }
 
-.link-to-job{background-image: url("assets/icons/world.svg")}
-.widget{background-image: url("assets/icons/network.svg")}
-.upload{background-image: url("assets/icons/paper-plane.svg")}
+.link-to-job{background-image: url("assets/earth.svg")}
+.widget{background-image: url("assets/widget.svg")}
+.upload{background-image: url("assets/airplane.svg")}
 
 
 .share-text {
@@ -702,9 +686,9 @@ tr:last-child {
 }
 
 
-/*======================
-=========Arrows=========
-=======================*/
+/**********************
+*********Arrows********
+***********************/
 
 .up-arrow {
   border: 1px solid #D2D8E0;
@@ -742,9 +726,9 @@ tr:last-child {
   margin-bottom: 4px;
 }
 
-/*======================
-======Media Queries=====
-=======================*/
+/**********************
+*****Media Queries*****
+***********************/
 
 @media (max-width: 1200px) {
   .chart-area {
@@ -765,11 +749,14 @@ tr:last-child {
 
 
 @media screen and (max-width: 1020px) {
-  .tab-link:nth-child(n + 6) {
-    display: none;
+  .interviews-tab,
+  .activity-tab,
+  .broadcast-tab,
+  .notifications-tab {
+    display: none
   }
 
-  .more-1 {
+  .more {
     display: inline-block;
   }
 
@@ -778,12 +765,12 @@ tr:last-child {
   }
 
   table,
-  .contact-box {
+  .social-box {
     width: 100%;
   }
 
 
-  .contact-box,
+  .social-box,
   .share {
     margin-top: 50px;
   }
@@ -812,7 +799,7 @@ tr:last-child {
     justify-content: center;
   }
 
-  .menu-item:nth-child(n+3) {
+  .job-tab {
     display: none;
   }
 
@@ -861,10 +848,6 @@ tr:last-child {
   .more-1,
   .job-tab {
     display: none;
-  }
-
-  .more-2 {
-    display: inline-block;
   }
 
   .table-header {
