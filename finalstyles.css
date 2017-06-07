@@ -49,10 +49,6 @@ a{
   display: block;
 }
 
-a:visited{
-  color: inherit;
-}
-
 main,
 .sidebar {
   min-height: 100%;
@@ -76,6 +72,10 @@ main,
   margin-left: 45px;
 }
 
+.drop-down-arrow {
+  height: 12px;
+}
+
 .sidebar-profile.links {
   height: 150px;
   padding-top: 25px;
@@ -87,7 +87,7 @@ main,
   border-bottom: solid 2px #23293A;
 }
 
-.links:last-child {
+.sidebar-boxes {
   border-bottom: none;
 }
 
@@ -149,7 +149,8 @@ input[type="checkbox"] {
   vertical-align: bottom;
 }
 
-input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
+input[type="checkbox"]:before,
+input[type="checkbox"]:checked:before {
   position:absolute;
   top:0;
   left:0;
@@ -283,12 +284,11 @@ main {
   background-position-y: 50%;
 }
 
-.title-separator {
+.title-divider {
   display: inline-block;
 }
 
-.preview,
-.preview:visited {
+.preview {
   color: #2096F6;
 }
 
@@ -335,7 +335,7 @@ main {
 .edit-btn:hover{background-image: url("assets/pencil-white.svg")}
 .delete-btn:hover{background-image: url("assets/garbage-white.svg")}
 
-.status-circle {
+.open-dot {
   display: inline-block;
   background: #79C12D;
   border-radius: 50%;
@@ -360,13 +360,9 @@ main {
   color: #B9BDCC;
 }
 
-.more-1 {
+.more {
   display: none;
   margin-right: 0;
-}
-
-.tab:visited {
-  color: #B9BDCC;
 }
 
 .tab:hover {
@@ -383,8 +379,8 @@ main {
 ***********************/
 
 .top-main,
-.separator,
-.table-contact {
+.divider,
+.bottom-main {
   max-width: 1200px;
   margin: auto;
 }
@@ -471,7 +467,7 @@ main {
   height: 165px;
 }
 
-.separator {
+.divider {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -490,16 +486,34 @@ hr:first-child {
   margin-left: 0;
 }
 
+.divider-arrow {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border: 1px solid #D2D8E0;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.up-arrow {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  transform: rotate(180deg);
+}
+
 hr:last-child {
   margin-right: 0;
 }
+
 
 
 /**********************
 ******Stupid Table*****
 ***********************/
 
-.table-contact {
+.bottom-main {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -627,16 +641,13 @@ tr:last-child {
 .linkedin:hover {background-color: #03395d;}
 
 
-.job-link-container {
+.copy-input {
   padding: 15px 0 25px;
   border-bottom: 1px solid #D2D8E0;
 }
 
-.job-link-container:last-child {
+.copy-input:last-child {
   padding-bottom: 0;
-}
-
-.job-link-container:last-child {
   border-bottom: none;
 }
 
@@ -661,7 +672,7 @@ tr:last-child {
 }
 
 .copy-text,
-.save-text-btn {
+.copy-btn {
   padding: 10px;
   border: none;
 }
@@ -674,7 +685,7 @@ tr:last-child {
   width: 100%;
 }
 
-.save-text-btn {
+.copy-btn {
   flex-grow: 1;
   width: 25%;
   background: #35ACB5;
@@ -682,49 +693,8 @@ tr:last-child {
   cursor: pointer;
 }
 
-.save-text-btn:hover {
+.copy-btn:hover {
   background-color: #227980;
-}
-
-
-/**********************
-*********Arrows********
-***********************/
-
-.up-arrow {
-  border: 1px solid #D2D8E0;
-  border-radius: 50%;
-  background-color: #fff;
-}
-
-.arrow {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.arrow:after {
-  margin-top: 10px;
-  content: '';
-	display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-top: 1px solid #D2D8E0;
-  border-right: 1px solid #D2D8E0;
-  transform: rotate(-45deg);
-}
-
-.drop-down-arrow {
-  height: 20px;
-  width: 20px;
-}
-
-.arrow.drop-down-arrow:after {
-  transform: rotate(135deg);
-  border-color: #B9BDCC;
-  margin-bottom: 4px;
 }
 
 /**********************
@@ -748,7 +718,6 @@ tr:last-child {
   }
 }
 
-
 @media screen and (max-width: 1020px) {
   .interviews-tab,
   .activity-tab,
@@ -761,7 +730,7 @@ tr:last-child {
     display: inline-block;
   }
 
-  .table-contact {
+  .bottom-main {
     flex-direction: column;
   }
 
@@ -790,7 +759,7 @@ tr:last-child {
   .title-header,
   .tab-bar,
   .chart-area,
-  .table-contact {
+  .bottom-main {
     padding-left: 10px;
     padding-right: 10px;
   }
