@@ -815,7 +815,6 @@ tr:last-child {
     background-position-x: 15px;
   }
 
-  .more,
   .job-tab {
     display: none;
   }
@@ -823,6 +822,7 @@ tr:last-child {
   .table-header {
     margin-right: 20px;
   }
+
   tbody tr {
     flex-direction: column;
   }
